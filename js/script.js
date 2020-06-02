@@ -72,11 +72,6 @@
                     
                 }
 
-                if ($("#password").val() != $("#passwordConfirm").val()) {
-                    
-                    errorMessage += "<p>Your passwords don't match</p>";
-                    
-                }
                 
                 if (errorMessage != "") {
                     
