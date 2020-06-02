@@ -1,20 +1,69 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-    color:white;
-    text-align: center;
-    background-color: burlywood;
+html{
+    height: 100%;
+    width: 100%;
 }
 
-form{
-    background-color: grey;
-    padding: 30px 10px;
-    height:300px;
-    margin: 20px 360px;
+body {
+
+    font-family: helvetica, sans-serif;
+    font-size:130%;
+    height: 100%;
+    width: 100%;
+
 }
 
-h1{
-    color:black;
-    text-decoration: underline;
-    text-align: center;
+input {
+
+    padding: 5px 5px 12px 5px;
+    font-size: 60%;
+    border-radius: 5%;
+    border: 1px solid grey;
+    width:30%;
+
+    }
+
+label {
+    
+    position: relative;
+    top:2%;
+    width:30%;
+    float: left;
+    
+}
+
+#wrapper {
+    
+    width: 70%;
+    margin: 0 auto;
+    
+    
+}
+
+.form-element {
+    
+    margin-bottom: 3%;
+    margin-left: 10%;
+    
+}
+
+#submitButton {
+    
+    width: 20%;
+    margin-left: 25%;
+}
+
+#errorMessage {
+    
+    color: red;
+    font-size: 90% !important;
+    
+}
+
+#successMessage {
+    
+    color: green;
+    font-size: 90% !important;
+    display:none;
+    margin-bottom:20%;
+    
 }
