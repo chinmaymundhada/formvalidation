@@ -2,13 +2,12 @@
             function isEmail(email) {
   
                 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  
                 return regex.test(email);
                 
             }
 
             function CheckPassword(password) { 
-                var passw=  /^[A-Za-z]\w{7,14}$/;
+                var passw=  /[A-Za-z]^[A-Za-z]\w{7,14}$/;
                 return passw.test(password);
             }
 
@@ -16,7 +15,6 @@
 
             
             $("#submitButton").click(function() {
-                
                 var errorMessage = "";
                 var fieldsMissing = "";
                 
@@ -63,7 +61,7 @@
                 }
 
                 if (CheckPassword($("password").val())== false){
-                     errrorMessage += "<p>Your password does not match the required constraints</p>";
+                     errorMessage += "<p>Your password does not match the required constraints</p>";
                 }
 
                 if ($("#password").val() != $("#passwordConfirm").val()) {
